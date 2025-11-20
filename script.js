@@ -224,7 +224,7 @@ function animatePlanets() {
   const centerY = window.innerHeight / 2;
 
   planets.forEach(planet => {
-    planetRotation[planet.id] = (planetRotation[planet.id] + 0.2) % 360;
+    planetRotation[planet.id] = (planetRotation[planet.id] + 0.1) % 360;
     const wrapper = document.querySelector(`[data-planet-id="${planet.id}"]`);
     if (!wrapper) return;
 
